@@ -1,18 +1,34 @@
-console.log('Hallo');
 const gridContainer = document.querySelector(".grid-container")
 
-let gridSize = 16;
+const hoverStyles = `
+    background: pink;
+`;
 
-for (let i = 0; i < gridSize * gridSize; i++) {
-    let gridSquare = document.createElement("div")
-    gridSquare.innerText = i
-    gridSquare.classList.add("item")
-    gridContainer.appendChild(gridSquare)
+let gridSize = 10;
 
-    gridSquare.addEventListener("mouseover", ()=> {
-        gridSquare.classList.add("colored")
-        // gridSquare.style.background = "pink"
-        console.log("bep");
+function createGrid(size) {
+    gridContainer.innerText = "";
+    
+    const itemStyles = `
+    flex: 0 0 calc(100% / ${size});
+    height: calc(800px / ${size}); 
+    max-height: calc(800px / ${size});
+    `
+
+    for (let i = 0; i < size * size; i++) {
+        let gridSquare = document.createElement("div")
+        gridSquare.innerText = i
+        gridSquare.classList.add("item")
+        gridSquare.style.cssText = itemStyles
         
-    })
+        gridSquare.addEventListener("mouseover", () => {
+            gridSquare.style.cssText = `
+                ${itemStyles}
+                ${hoverStyles}
+            `;
+        })
+        gridContainer.appendChild(gridSquare)
+    }
 }
+
+createGrid(gridSize)
