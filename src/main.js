@@ -8,7 +8,11 @@ for (let i = 0; i < gridSize * gridSize; i++) {
     gridSquare.innerText = i
     gridSquare.classList.add("item")
     gridContainer.appendChild(gridSquare)
-    console.log("beep");
-    
 
+    gridSquare.addEventListener("mouseover", ()=> {
+        gridSquare.classList.add("colored")
+        // gridSquare.style.background = "pink"
+        console.log("bep");
+        
+    })
 }

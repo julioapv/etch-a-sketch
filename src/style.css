@@ -13,3 +13,8 @@
     height: 32px;
     border: solid 1px olive;
 }
+
+.colored {
+    background-color: pink;
+    color: red;
+}
