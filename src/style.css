@@ -1,11 +1,15 @@
 .grid-container {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    width: 600px;
+    margin: 0 auto;
+    gap: 2px;
     background-color: lightblue;
 }
 
 .item {
-    background-color: lightgoldenrodyellow;
-    flex: 2 2 100px;
+    flex: 0 0 calc(100% / 18);
+    height: 32px;
+    border: solid 1px olive;
 }
