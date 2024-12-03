@@ -9,11 +9,29 @@
     <title>Etch-a-Sketch</title>
   </head>
   <body>
-    <div class="information-container">
+    <header>
       <h1>Etch-a-Sketch</h1>
-    </div>
-    <div class="grid-container">
-    </div>
+      <p>Click and move your mouse around to paint in the canvas</p>
+    </header>
+
+    <main>
+        <div class="information-container">
+          <form>
+            <label for="quantity">Enter the new size for you canvas. Enter a number between 1 and 100:</label>
+            <input type="number" class="grid-input" name="quantity" min="1" max="5">
+            <button class="change-grid-button">Create new canvas</button>
+          </form>
+
+          <p class="grid-size-display"></p>
+        </div>
+
+        <div class="grid-container">
+        </div>
+    </main>
+
+    <footer>
+      <p>Developed by Julio Peña</p>
+    </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
