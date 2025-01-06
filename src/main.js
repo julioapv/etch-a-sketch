@@ -1,16 +1,17 @@
 const gridContainer = document.querySelector(".grid-container")
 const changeGridBtn = document.querySelector(".change-grid-button")
+const resetGridBton = document.querySelector(".reset-grid-button")
 const gridInput = document.querySelector(".grid-input")
 const gridesizeText = document.querySelector(".grid-size-display")
 
 const hoverStyles = `
-    background: pink;
+    background: black;
 `;
 
 let gridSize = 16;
 
 function createGrid(size) {
-    gridContainer.innerText = "";
+    gridContainer.innerHTML = "";
     
     const itemStyles = `
     flex: 0 0 calc(100% / ${size});
@@ -58,6 +59,11 @@ changeGridBtn.addEventListener("click", (event) => {
         createGrid(gridSize)
         gridesizeText.innerText = `Current grid size: ${gridSize}`
     }
+    event.preventDefault();
+})
+
+resetGridBton.addEventListener("click", (event) => {
+    createGrid(gridSize)
     event.preventDefault();
 })
 

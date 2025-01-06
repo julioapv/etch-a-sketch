@@ -10,8 +10,8 @@
   </head>
   <body>
     <header>
-      <h1>Etch-a-Sketch</h1>
-      <p>Click and move your mouse around to paint in the canvas</p>
+      <h1 class="header-title">Etch-a-Sketch</h1>
+      <p class="header-body">Click and move your mouse around to paint in the canvas</p>
     </header>
 
     <main>
@@ -19,9 +19,11 @@
           <form>
             <label for="quantity">Enter the new size for you canvas. Enter a number between 1 and 100:</label>
             <input type="number" class="grid-input" name="quantity" min="1" max="5">
-            <button class="change-grid-button">Create new canvas</button>
+            <div class="buttons-container">
+              <button class="change-grid-button">Create new canvas</button>
+              <button class="reset-grid-button">Reset grid</button>
+            </div>
           </form>
-
           <p class="grid-size-display"></p>
         </div>
 
