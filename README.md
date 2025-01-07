@@ -5,6 +5,9 @@ A simple Etch-a-Sketch webpage that allows you to draw or paint on a canvas
 
 Live demo: https://julioapv.github.io/etch-a-sketch/
 
+![Etch a sketch image](./public/assets/showcase-image.png)
+
+
 ## 🚀 **Project Highlights**
 - Interactive grid-based sketchpad application.
 - Supports multiple drawing modes: normal, rainbow, opacity (gradual darkening), and eraser.
