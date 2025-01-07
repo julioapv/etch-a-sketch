@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Etch-a-Sketch</title>
+    <script type="module" crossorigin src="/etch-a-sketch/assets/index-DKRMUc0B.js"></script>
+    <link rel="stylesheet" crossorigin href="/etch-a-sketch/assets/index-DOXQuDzX.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="header-title">Etch-a-Sketch ✏️</h1>
+      <p class="header-body">Click and move your mouse around to paint in the canvas</p>
+    </header>
+
+    <main>
+        <div class="information-container">
+          <form>
+            <label for="quantity">Enter a new size for you canvas. Enter a number between 1 and 100:</label>
+            <input type="number" class="grid-input" name="quantity" min="1" max="5">
+            <div class="buttons-container">
+              <button class="change-grid-button">Create new canvas</button>
+              <button class="reset-grid-button">Reset grid</button>
+            </div>
+          </form>
+        </div>
+        
+        <div class="extra-modes-container">
+          <button class="normal-mode-button active">Normal mode 🎨</button>
+          <button class="rainbow-mode-button">Rainbow mode 🌈</button>
+          <button class="eraser-mode-button">Eraser mode ❌</button>
+          <button class="opacity-mode-button">Opacity mode 🕶️</button>
+        </div>
+        
+        <p class="grid-size-display"></p>
+        <div class="grid-container">
+        </div>
+    </main>
+
+    <footer>
+      <p>Developed by Julio Peña</p>
+    </footer>
+  </body>
+</html>
