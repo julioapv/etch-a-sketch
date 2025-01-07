@@ -49,12 +49,35 @@ header {
     padding: 10px 15px;
     border-radius: 10px;
     cursor: pointer;
+    background: #003049;
+    color: white;
 }
 
 .reset-grid-button {
     padding: 10px 15px;
     border-radius: 10px;
     cursor: pointer;
+    background: #c1121f;
+    color: white;
+}
+
+.extra-modes-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.active {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.normal-mode-button, .rainbow-mode-button, .opacity-mode-button, .eraser-mode-button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+
 }
 
 .grid-container {
@@ -66,6 +89,8 @@ header {
     background-color: #FFFFFF;
     border: solid 2px black;
     cursor: pointer;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24);
 }
 
 .item {
